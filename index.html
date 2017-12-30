@@ -10,10 +10,16 @@ layout: default
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
-        {{ post.content }}
-      </div>
+        {% if post.title == "Introduction" %}
+		{{ post.content }}
+      		</div>
+	{% else %}
+		{{ post.excerpt }}
+      		<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+		</div>
+	{% endif %}
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+
     </article>
   {% endfor %}
 </div>
