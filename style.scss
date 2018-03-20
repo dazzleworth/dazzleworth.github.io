@@ -7,11 +7,20 @@
 
 @import "reset";
 @import "variables";
+@import url(//fonts.googleapis.com/css?family=Monoton|Indie+Flower|Poppins:300,400,600);
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
 /* BASE RULES */
 /**************/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-weight: 400;
+    box-sizing: border-box;
+    outline: 0;
+}
 
 html {
   font-size: 100%;
@@ -21,13 +30,6 @@ body {
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -109,6 +111,56 @@ strong, b {
 img {
   max-width: 100%;
 }
+
+.hero {
+    background: rgba(236, 236, 249, 0.21);
+    color: #fff;
+    text-align: center;
+    padding: 80px 0 60px;
+    position: relative;
+}
+
+.hero:before {
+    content:  "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: url(//scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/22045874_10209611715438345_8594633276305879991_n.jpg?oh=de70b85ff202daed6dcdaf3b65ffee01&oe=5AFA91F1);
+    
+}
+
+
+.hero__title {
+    font-size: 47px;
+    line-height: 60px;
+    font-weight: 200;
+    margin: 0 auto 40px;
+    color: #f35656;
+    font-size: 16px;
+    font-family: 'Indie Flower', cursive;
+    /*font-weight: bold;*/
+}
+
+
+.container {
+    height: 100%;
+    position: relative;
+}
+
+.container__header {
+    background: #fff;
+    width: 100%;
+}
+
+.container__header--home {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
