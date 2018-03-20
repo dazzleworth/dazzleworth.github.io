@@ -28,12 +28,12 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  /*font: 18px/1.4 $helvetica;*/
   color: $darkGray;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  /*font-family: $helveticaNeue;*/
   color: $darkerGray;
   font-weight: bold;
 
@@ -160,7 +160,17 @@ img {
     padding: 20px 40px;
 }
 
+.how-it-works__body {
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
 
+.how-it-works__step {
+    margin-right: 80px;
+    flex: 1;
+}
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
