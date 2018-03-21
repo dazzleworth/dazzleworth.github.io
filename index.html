@@ -3,21 +3,36 @@ layout: default
 ---
 <img src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/22045874_10209611715438345_8594633276305879991_n.jpg?oh=de70b85ff202daed6dcdaf3b65ffee01&oe=5AFA91F1" alt="Wendy &amp; Randy" />
 
+{% for post in site.posts %}
+<div class="how-it-works">
+<h2>My Inner World</h2>
+{% if post.title == "Introduction" %}
+<div class="how-it-works__body">
+<div class="how-it-works__step">
+<div class="how-it-works__step-title">{{ post.title }}</div>
+<div class="how-it-works__step-body">{{ post.content }}</div>
+{% endif %}
+</div>
+{% endfor %}
+<div class="how-it-works__step">
+<div class="how-it-works__step-title">Step 2: Add to your website</div>
+<div class="how-it-works__step-body">We provide a code that can be copied and pasted into you website which will display your slider. Easy peasy.</div>
+</div>
+</div>
+</div>
+
 <div class="posts">
-  {% for post in site.posts %}
+  {% for blog in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h1><a href="{{ site.baseurl }}{{ blog.url }}">{{ blog.title }}</a></h1>
 
       <div class="entry">
-        {% if post.title == "Introduction" %}
-		{{ post.content }}
-      		</div>
-	{% else %}
+        {% unless blog.title == "Introduction" %}
 		{{ post.excerpt }}
       		<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-		</div>
-	{% endif %}
+      </div>
+	{% endunless %}
 
 
     </article>
