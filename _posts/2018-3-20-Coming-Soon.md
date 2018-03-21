@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Coming Soon
+title: Coming Soon...
 ---
 
 Watch this space.

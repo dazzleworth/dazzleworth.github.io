@@ -3,9 +3,9 @@ layout: default
 ---
 <img src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/22045874_10209611715438345_8594633276305879991_n.jpg?oh=de70b85ff202daed6dcdaf3b65ffee01&oe=5AFA91F1" alt="Wendy &amp; Randy" />
 
-{% for post in site.posts %}
 <div class="how-it-works">
 <h2>My Inner World</h2>
+{% for post in site.posts %}
 {% if post.title == "Introduction" %}
 <div class="how-it-works__body">
 <div class="how-it-works__step">
@@ -21,9 +21,9 @@ layout: default
 </div>
 
 <div class="posts">
-  {% for blog in site.posts %}
     <article class="post">
-      <h1>Blog</h1>
+    <h1>Blog</h1>
+  {% for blog in site.posts %}
       {% unless blog.title == "Introduction" %}
       <h2><a href="{{ site.baseurl }}{{ blog.url }}">{{ blog.title }}</a></h2>
       {% if blog.title == "Coming Soon" %}
