@@ -19,22 +19,21 @@ layout: default
 <div class="how-it-works__step-body">We provide a code that can be copied and pasted into you website which will display your slider. Easy peasy.</div>
 </div>
 </div>
-</div>
 
 <div class="posts">
   {% for blog in site.posts %}
     <article class="post">
-
+      {% unless blog.title == "Introduction" %}
       <h1><a href="{{ site.baseurl }}{{ blog.url }}">{{ blog.title }}</a></h1>
 
       <div class="entry">
-        {% unless blog.title == "Introduction" %}
 		{{ post.excerpt }}
       		<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
       </div>
-	{% endunless %}
+      {% endunless %}
 
 
     </article>
   {% endfor %}
+</div>
 </div>
