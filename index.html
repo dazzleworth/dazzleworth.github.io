@@ -24,7 +24,8 @@ layout: default
   {% for blog in site.posts %}
     <article class="post">
       {% unless blog.title == "Introduction" %}
-      <h1><a href="{{ site.baseurl }}{{ blog.url }}">{{ blog.title }}</a></h1>
+      <h1>Blog</h1>
+      <h2><a href="{{ site.baseurl }}{{ blog.url }}">{{ blog.title }}</a></h2>
 
       <div class="entry">
 		{{ post.excerpt }}
