@@ -142,6 +142,10 @@ img {
     position: relative;
 }
 
+.container img {
+    width: 100%;
+}
+
 .container__header {
     background: #fff;
     width: 100%;
@@ -168,6 +172,10 @@ img {
 .how-it-works__step-title {
     font-weight: 600;
     margin-bottom: 10px;
+}
+
+how-it-works__step-body p {
+    line-height:  1.3;
 }
 
 .how-it-works__body {
