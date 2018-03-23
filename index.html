@@ -25,7 +25,7 @@ layout: default
   {% for blog in site.posts %}
       {% unless blog.title == "Introduction" %}
       <h2><a href="{{ site.baseurl }}{{ blog.url }}">{{ blog.title }}</a></h2>
-      {% if blog.title == "Coming Soon" %}
+      {% if blog.title == "Coming Soon..." %}
       <div class="entry">
       {{ post.content }}
       {% else %}
