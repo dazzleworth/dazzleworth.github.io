@@ -113,6 +113,11 @@ img {
     position: relative;
 }
 
+.hero img {
+    width: 100%;
+    z-index: -1;
+}
+
 .hero:before {
     content:  "";
     position: absolute;
@@ -133,6 +138,11 @@ img {
     color: #f35656;
     font-size: 16px;
     font-family: 'Indie Flower', cursive;
+    position: absolute;
+    z-index: 3000;
+    top: 30%;
+    font-size: 56px;
+    left: 10%;
     /*font-weight: bold;*/
 }
 
@@ -220,6 +230,27 @@ how-it-works__step-body p {
 
 .clearfix:after {
     clear: both;
+}
+
+.button {
+    position: absolute;
+    z-index: 5000;
+    top: 0;
+    left: 50%;
+}
+
+.button--round {
+    border-radius: 40px;
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    transition: all .2s;
+}
+
+.button--large {
+    font-size: 25px;
 }
 
 /*********************/
@@ -336,6 +367,9 @@ nav {
 }
 
 .post {
+    
+  width:  100%;
+    
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -353,6 +387,10 @@ nav {
     text-transform: uppercase;
     font-size: 15px;
   }
+
+    h1 {
+        text-align: center;
+    }
 }
 
 .wrapper-footer {
