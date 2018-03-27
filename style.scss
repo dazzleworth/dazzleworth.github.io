@@ -135,14 +135,17 @@ img {
     line-height: 60px;
     font-weight: 200;
     margin: 0 auto 40px;
-    color: #f35656;
+    color: #efefef;
     font-size: 16px;
-    font-family: 'Indie Flower', cursive;
     position: absolute;
     z-index: 3000;
     top: 30%;
     font-size: 56px;
     left: 10%;
+     @media screen and (min-width: 1020px) {
+      top: 35%;
+      font-size: 40px;
+  }
     /*font-weight: bold;*/
 }
 
