@@ -15,9 +15,22 @@ layout: default
 {% endfor %}
 <div class="how-it-works__step">
 <div class="how-it-works__step-title">Portfolio</div>
-<div class="how-it-works__step-body">We provide a code that can be copied and pasted into you website which will display your slider. Easy peasy.</div>
+<div class="how-it-works__step-body">
+            <ul id="jobcarousel" class="jcarousel-careers">
+                <li><a href="/careers#position_1" >Coming Soon...</a></li>
+                <li><a href="/careers#position_2" >Coming Soon...</a></li>
+                <li><a href="/careers#position_3" >Coming Soon...</a></li>
+                <li><a href="/careers#position_4" >Coming Soon...</a></li>
+            </ul>
+        </div>
 </div>
 </div>
+
+<script type="text/javascript">
+            $(document).ready(function () {
+        jQuery('#jobcarousel').jcarousel();
+    });
+</script>
 
 <div class="how-it-works__body">
     <article class="post">
