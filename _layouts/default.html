@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
@@ -8,10 +8,11 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="stylesheet" href="{{ site.baseurl }}/js/jcarousel.basic.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/js/jquery.jcarousel.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <script src="{{ site.baseurl }}/js/slider.js"></script>
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 
@@ -47,7 +48,7 @@
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
-    
+    
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
