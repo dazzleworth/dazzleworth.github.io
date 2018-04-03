@@ -51,29 +51,19 @@
 .jcarousel-control-prev,
 .jcarousel-control-next {
     position: absolute;
-    top: 200px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    background: #4E443C;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 0 0 1px #000;
-    font: 24px/27px Arial, sans-serif;
-    -webkit-border-radius: 30px;
-       -moz-border-radius: 30px;
-            border-radius: 30px;
-    -webkit-box-shadow: 0 0 2px #999;
-       -moz-box-shadow: 0 0 2px #999;
-            box-shadow: 0 0 2px #999;
+    top: 130px;
+    width: 32px;
+    height: 32px;
 }
 
 .jcarousel-control-prev {
-    left: -50px;
+    left: -10px;
+    background: transparent url(images/prev-horizontal-arrows.png) no-repeat 0 0;
 }
 
 .jcarousel-control-next {
-    right: -50px;
+    right: -10px;
+    background: transparent url(images/next-horizontal-arrows.png) no-repeat 0 0;
 }
 
 .jcarousel-control-prev:hover span,
