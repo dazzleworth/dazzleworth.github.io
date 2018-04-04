@@ -28,13 +28,12 @@
 }
 
 /** Carousel **/
-
-.jcarousel {
+#portfolio {
     position: relative;
     overflow: hidden;
 }
 
-.jcarousel ul {
+.jcarousel {
     width: 100%;
     position: relative;
     list-style: none;
@@ -51,7 +50,7 @@
 .jcarousel-control-prev,
 .jcarousel-control-next {
     position: absolute;
-    /*top: 130px;*/
+    top: 55%;
     width: 32px;
     height: 32px;
 }
