@@ -51,18 +51,18 @@
 .jcarousel-control-prev,
 .jcarousel-control-next {
     position: absolute;
-    top: 130px;
+    /*top: 130px;*/
     width: 32px;
     height: 32px;
 }
 
 .jcarousel-control-prev {
-    left: -10px;
+    left: 50%;
     background: transparent url(images/prev-horizontal-arrows.png) no-repeat 0 0;
 }
 
 .jcarousel-control-next {
-    right: -10px;
+    right: 50%;
     background: transparent url(images/next-horizontal-arrows.png) no-repeat 0 0;
 }
 
