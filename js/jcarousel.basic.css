@@ -41,7 +41,7 @@
     padding: 0;
 }
 
-jcarousel li {
+.jcarousel li {
     /*float: left;*/
     font-size: 30px;
     padding: 20px 35px;
