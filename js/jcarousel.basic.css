@@ -41,9 +41,11 @@
     padding: 0;
 }
 
-/*.jcarousel li {
-    float: left;
-}*/
+jcarousel li {
+    /*float: left;*/
+    font-size: 30px;
+    padding: 20px 35px;
+}
 
 /** Carousel Controls **/
 
