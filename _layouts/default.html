@@ -9,10 +9,8 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="stylesheet" href="{{ site.baseurl }}/js/jcarousel.basic.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/js/jquery.jcarousel.min.js"></script>
-    <script src="{{ site.baseurl }}/js/slider.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/js/slick.css"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/js/slick-theme.css">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 
@@ -58,5 +56,13 @@
     </div>
 
     {% include analytics.html %}
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.p_slider').slick();
+    });
+    </script>
   </body>
 </html>
