@@ -404,6 +404,21 @@ nav {
     }
 }
 
+.slider {
+    max-width: 350px;
+}
+
+.slider span {
+    padding: 10px;
+    border: 1px solid black;
+    padding: 20px 35px;
+}
+
+.slider span p {
+    font-size: 30px;
+    text-align: center;
+}
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
